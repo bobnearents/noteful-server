@@ -17,7 +17,7 @@ const morganOption = (NODE_ENV === 'production')
 
 app.use(morgan(morganOption));
 app.use(cors({
-  origin: CLIENT_ORIGIN
+  origin: "http://localhost:3000/"
 }));
 app.use(helmet());
 app.use('/api/notes', notesRouter);
